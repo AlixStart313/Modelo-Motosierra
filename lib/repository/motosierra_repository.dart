@@ -3,7 +3,7 @@ import 'package:front_carros/model/motosierra_model.dart';
 import 'package:http/http.dart' as http;
 
 class MotoSierraRepository {
-  final String apiUrl = 'https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/';
+  final String apiUrl = 'https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod';
 
   MotoSierraRepository();
 
