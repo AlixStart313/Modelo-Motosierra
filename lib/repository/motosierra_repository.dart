@@ -3,14 +3,14 @@ import 'package:front_carros/model/motosierra_model.dart';
 import 'package:http/http.dart' as http;
 
 class MotoSierraRepository {
-  final String apiUrl = 'https://qvz2adk88k.execute-api.us-east-2.amazonaws.com/Prod';
+  final String apiUrl = 'https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/';
 
   MotoSierraRepository();
 
   Future<List<Motosierra>> getMotosierras() async {
     try {
       final response = await http.get(
-        Uri.parse('$apiUrl/get_cars'),
+        Uri.parse('$apiUrl/get_items'),
       );
 
       if (response.statusCode == 200) {
@@ -29,7 +29,7 @@ class MotoSierraRepository {
   Future<void> saveMotosierra(Motosierra motosierra) async {
     try {
       final response = await http.post(
-        Uri.parse('$apiUrl/save_car'),
+        Uri.parse('$apiUrl/save_item'),
         body: jsonEncode(motosierra.toJson()),
       );
 
@@ -45,7 +45,7 @@ class MotoSierraRepository {
   Future<void> updateMotosierra(Motosierra motosierra) async {
     try {
       final response = await http.put(
-        Uri.parse('$apiUrl/update_car'),
+        Uri.parse('$apiUrl/update_item'),
         body: jsonEncode(motosierra.toJson())
       );
 
