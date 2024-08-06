@@ -2,7 +2,7 @@ name: On Website Deploy
 on:
   push:
     branches:
-      - "main"
+      - "master"
 jobs:
   build_and_deploy_web:
     name: Build & Deploy Flutter to Web
@@ -28,6 +28,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Commit the artifacts
-          branch: main
+          branch: master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
