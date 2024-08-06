@@ -61,22 +61,22 @@ class _AddEditMotosieraScreenState extends State<AddEditMotosieraScreen> {
               TextFormField(
                 initialValue: year,
                 maxLength: 4,
-                decoration: const InputDecoration(labelText: 'Año'),
+                decoration: const InputDecoration(labelText: 'Potencia'),
                 keyboardType: TextInputType.number,
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 onSaved: (value) => year = value!,
                 validator: (value) =>
-                    value!.isEmpty ? 'El año es requerido' : null,
+                    value!.isEmpty ? 'La potencia es requerida' : null,
               ),
               TextFormField(
                 initialValue: color,
                 maxLength: 255,
-                decoration: const InputDecoration(labelText: 'Color'),
+                decoration: const InputDecoration(labelText: 'Peso'),
                 onSaved: (value) => color = value!,
                 validator: (value) =>
-                    value!.isEmpty ? 'El color es requerido' : null,
+                    value!.isEmpty ? 'El peso es requerido' : null,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
@@ -96,7 +96,7 @@ class _AddEditMotosieraScreenState extends State<AddEditMotosieraScreen> {
                     Navigator.pop(context);
                   }
                 },
-                child: Text(widget.motosierra == null ? 'Registrar' : 'Actualizar'),
+                child: Text(widget.motosierra == null ? 'Guardar' : 'Modificar'),
               ),
             ],
           ),
