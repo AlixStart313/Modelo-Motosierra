@@ -73907,7 +73907,7 @@ h1(){var s=0,r=A.S(t.NA),q,p=2,o,n,m,l,k,j,i,h
 var $async$h1=A.T(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.X(A.aHT(A.f0("https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/get_items")),$async$h1)
+return A.X(A.aHT(A.f0("https://b9y3kq0x76.execute-api.us-east-2.amazonaws.com/Prod/get_items")),$async$h1)
 case 7:n=b
 if(n.b===200){j=n
 m=J.be(B.c2.Ob(0,A.aHC(A.aFI(j.e).c.a.h(0,"charset")).fk(0,j.w),null),"motosierras")
@@ -73937,7 +73937,7 @@ S8(a){var s=0,r=A.S(t.H),q=1,p,o,n,m,l,k
 var $async$jG=A.T(function(b,c){if(b===1){p=c
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return A.X(A.aIt(A.f0("https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/save_item"),B.c2.CS(a.jC(),null)),$async$jG)
+return A.X(A.aIt(A.f0("https://b9y3kq0x76.execute-api.us-east-2.amazonaws.com/Prod/save_item"),B.c2.CS(a.jC(),null)),$async$jG)
 case 6:o=c
 if(o.b!==201){m=A.cK("Failed to save motosierra")
 throw A.e(m)}q=1
@@ -73961,7 +73961,7 @@ ah0(a){var s=0,r=A.S(t.H),q=1,p,o,n,m,l,k
 var $async$kB=A.T(function(b,c){if(b===1){p=c
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return A.X(A.aIw(A.f0("https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/update_item"),B.c2.CS(a.jC(),null)),$async$kB)
+return A.X(A.aIw(A.f0("https://b9y3kq0x76.execute-api.us-east-2.amazonaws.com/Prod/update_item"),B.c2.CS(a.jC(),null)),$async$kB)
 case 6:o=c
 if(o.b!==200){m=A.cK("Failed to update motosierra")
 throw A.e(m)}q=1
@@ -73985,7 +73985,7 @@ aaY(a){var s=0,r=A.S(t.H),q=1,p,o,n,m,l,k
 var $async$k9=A.T(function(b,c){if(b===1){p=c
 s=q}while(true)switch(s){case 0:q=3
 s=6
-return A.X(A.auW(A.f0("https://rw59b24fcg.execute-api.us-east-2.amazonaws.com/Prod/delete/"+a)),$async$k9)
+return A.X(A.auW(A.f0("https://b9y3kq0x76.execute-api.us-east-2.amazonaws.com/Prod/delete/"+a)),$async$k9)
 case 6:o=c
 if(o.b!==200){m=A.cK("Failed to delete item")
 throw A.e(m)}q=1
