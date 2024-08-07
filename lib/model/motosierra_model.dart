@@ -18,7 +18,7 @@ class Motosierra {
       id: json['id'] as int,
       brand: json['brand'] as String,
       model: json['model'] as String,
-      power: json['power'].toString(),
+      power: json['power'] as String,
       weigth: json['weigth'] as String,
     );
   }
